@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Project 14</title>
+<script>
+  function FarenheitToCelcius(){
+    var Farenheit = document.getElementById("Farenheit").value;
+    var CelciusInput = document.getElementById("Celcius");
+    var Celsius = (Farenheit - 32) * 5 / 9;
+    CelciusInput.value = Celsius.toFixed(2);
+  }
+</script>
+</head>
+<body>
+  <h1 style="text-align: center; font-size: 100px;">Convert</h1>
+  <p style="text-align: center; font-size: 50px;">Farenheit To Celcius</p>
+  <input id="Farenheit" type="number" placeholder="Farenheit" style="margin-left: 31%; width: 37%; padding: 15px; font-size: 20px;">
+  <br>
+  <button onclick="FarenheitToCelcius()" style="padding: 15px; width: 100px; margin-left: 46%; margin-top: 30px;">Convert</button>
+  <input id="Celcius" type="number" placeholder="Celcius" style="margin-left: 31%; width: 37%; padding: 15px; font-size: 20px; margin-top: 30px;" readonly>  
+</body>
+</html>
